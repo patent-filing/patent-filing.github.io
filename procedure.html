@@ -7,32 +7,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Patent Filing Support Structure</title>
+    <title>Patent Support Structure</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="procedure.css">
     <script src="main.js"></script>
+    <script src="main.js"></script>
+    <style>
+        img{
+            display: block;
+            margin: auto
+        }
+    </style>
   </head>
 
   <body>
-    <nav class="#1565c0 blue darken-3 second_nav" style="color:#1e88e5" >
+    <nav class="#1565c0 blue darken-3 second_nav" style="color:#1e88e5; text-align: center;" >
     <div class="nav-wrapper" style="color:#1e88e5" >
         <a href="#" class="brand-logo right hide-on-med-and-up">Menu</a>
         <a href="#" data-target="second_nav" class="sidenav-trigger  btn  center-align #e3f2fd blue lighten-5" style="color:black"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="hide-on-med-and-down temp " style="margin-left:10%">
 
-        <li style="width:33%"><a href="index.html">Home</a></li>
-        <li style="width:33%"><a href="timeline.html">Timeline</a></li>
-        <li style="width:33%"><a href="procedure.html">Procedure </a></li>
-
+            <li style="width:25%"><a href="index.html">Home</a></li>
+            <li style="width:25%"><a href="timeline.html">Timeline</a></li>
+            <li style="width:25%"><a href="procedure.html">Procedure </a></li>
+            <li style="width:25%"><a href="faq.html">FAQs </a></li>
+    
         </ul>
     </div>
     </nav>
     <!--Mobile side nav-->
-    <ul class="sidenav #bbdefb blue lighten-4" id="second_nav" style="margin-left:0;margin-top: 60px; height:40%; width:70%">
+    <ul class="sidenav #bbdefb blue lighten-4" id="second_nav" style="margin-left:0;margin-top: 115px; height:40%; width:70%">
         <li style=""><a href="index.html">Home</a></li>
         <li style=""><a href="timeline.html">Timeline</a></li>
         <li style=""><a href="procedure.html">Procedure </a></li>
-
+        <li><a href="faq.html">FAQs</a></li>
     </ul>
 
     <div class="fixed-action-btn" >
@@ -42,98 +49,131 @@
     </div>
 
     <div class="row section container">
-        <h4>Basic Requirements</h4>
-        <ul class="collection">
-            <li class="collection-item"><b>Operating System:</b> Microsoft Windows XP and higher (no support for LINUX or MAC)</li>
-            <li class="collection-item"><b>Web Browser: </b> Internet Explorer 9 and above only</li>
-            <a href='https://www.ncodesolutions.com' id="ds" class="collection-item" style=""><b>Digital Signature</b></a>
-
-        </ul>
+        <ul class="collapsible popout">
+            <li>
+                <div class="collapsible-header">Patentability search<i class="material-icons">arrow_drop_down</i></div>
+                <div class="collapsible-body">
+                    <p>Verify if the patent meets all the criteria as per Indian Patent Act, which is</p>
+                    <ol>
+                        <li>Novelty</li>
+                        <li>Non-Obviousness</li>
+                        <li>Industrial application</li>
+                        <li>Enabling </li>
+                    </ol>
+                    <p>Click <a href="https://ipindiaservices.gov.in/publicsearch" style="text-decoration: none;">here</a> to learn more</p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Basic Requirements<i class="material-icons right">arrow_drop_down</i></div>
+                <div class="collapsible-body">
+                    <ul class="collection" >
+                        <li class="collection-item">Operating System: Microsoft Windows XP and higher (no support for LINUX or MAC)</li>
+                        <li class="collection-item">Web Browser: Internet Explorer 9 and above only</li>
+                        <a href='https://www.ncodesolutions.com' id="ds" class="collection-item" style="">Digital Signature</a>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Registration <i class="material-icons right">arrow_drop_down</i></div>
+                <a href="https://ipindiaonline.gov.in/epatentfiling/goForLogin/doLogin">
+                    <div class="collapsible-body">
+                        <img class="responsive-img" src="images/register.PNG">
+                        <p class="">For Type of Applicant select "Natural Person". You will be required to add <a href='#ds'>Digital Signature</a> before proceeding</p>
+                        <img class="responsive-img" src="images/natural-person+digital-signature.PNG">
+                        <p>If Digital Signature has been installed properly then the following the screen should pop up. Please select the appropriate certificate.</p>
+                        <img class="responsive-img" src="images/digital-certificate.PNG">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div class="collapsible-header">Filling Forms <i class="material-icons right">arrow_drop_down</i></div>
+                <div class="collapsible-body">
+                    <p>On successful registrations and login you will be redirected to the following page</p>
+                    <img class="responsive-img" src="images/portal-homepage.PNG">
+                    <p>Following forms are required:</p>
+                    <ul class="collapsible">
+                        <li>
+                        <div class="collapsible-header">Form 1<i class="material-icons">arrow_drop_down</i></div>
+                        <div class="collapsible-body"><span>Application for Grant of Pattern</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Form 2<i class="material-icons">arrow_drop_down</i></div>
+                            <div class="collapsible-body"><span>Complete/Provisional Specification </span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Form 3<i class="material-icons">arrow_drop_down</i></div>
+                            <div class="collapsible-body"><span>Statement and Undertaking</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Form 5<i class="material-icons">arrow_drop_down</i></div>
+                            <div class="collapsible-body"><span>Declaration of Inventorship</span></div>
+                        </li>
+                    </ul>
+                    <p> After  Completion  of  the  form  user  has  to  save  the  draft.  Saving  the  draft  would create a new entry in the drafted forms that can be accessed later on.</p>
+                    <p>Upload:After  the  draft  is  saved,  user  is  required  to  upload  the  relevant  documents  by selecting from the drop down list.Once  the  document  is  successfully  uploaded,  uploaded  documents  would  appear  in  the tabular form.</p>
+            
+                    
+                    <p>Note that each form must be digitally signed, while uploading</p>
+                    <img class="responsive-img" src="images/sign-fike.PNG">
+            
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Payment <i class="material-icons right">arrow_drop_down</i></div>
+                <div class="collapsible-body">
+                    <p>After the forms are digitally signed, it is ready for making the payment  though  the  available  Payment  Gateways.User  just  needs  to check  the ready  forms  that  require  payment,  select  the  payment  mode  and  bank  and proceed.</p>
+                    <p>On successful payment the following screen will be visible:</p>
+                    <img src="images/paid.PNG" class="responsive-img">
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Publication <i class="material-icons right">arrow_drop_down</i></div>
+                <div class="collapsible-body">
+                    <p>If application has <b>Provisional Specification</b>: Need to file Complete Specification within 12 months. If not, application will be abandoned</p>
+                    <p>If application has <b>Complete Specification</b>: Early or post 18 months to publish</p>
+    
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Request for Examination on Form 18 <i class="material-icons right">arrow_drop_down</i></div>
+                <div class="collapsible-body">
+                    <p>Should be done within 48 months from date of priority</p>
+                    <p>Examination of patent is done and <b>FER (First Examination Report)</b> is issued</p>
+    
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">FER Issued <i class="material-icons right">arrow_drop_down</i></div>
+                <div class="collapsible-body">
+                    <p>Re-examination of amended documents</p>
+                    <p>Controller will offer hearing to Applicant</p>
+                    <p>Application should be put in order 12 months from issue of FER</p>
+                    <p>If objections met within 12 months - <b>patent is granted and published</b>, if not - patent will be abandoned</p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Pre-Grant Opposition<i class="material-icons">arrow_drop_down</i></div>
+                <div class="collapsible-body">Once, the FER is issued, the patent applicant needs to successfully overcome the objections to receive a patent grant. The whole process may involve responding to examination reports, appearing for hearing, etc. The total time needed to put an application in order for the grant is 6 months (earlier 12 months) from the date on which the FER is issued to the applicant. However, this 6 month period can be extended for a period of 3 months by the applicant by filing a request for an extension of time (Form 4).</div>
+            </li>
+            <li>
+                <div class="collapsible-header">Grant of Patent <i class="material-icons">arrow_drop_down</i></div>
+                <div class="collapsible-body">The application would be placed in order for grant once it is found to be meeting all patentability requirements. The grant of patent is notified in the patent journal which is published time to time.</div>
+            </li>
+            <li>
+                <div class="collapsible-header">Post Grant Opposition <i class="material-icons">arrow_drop_down</i></div>
+                <div class="collapsible-body">An opposition maybe filed 12 months from the publication of a patent. The process is similar to pre-grant opposition.</div>
+            </li>
+            <li>
+                <div class="collapsible-header">Renewal <i class="material-icons">arrow_drop_down</i></div>
+                <div class="collapsible-body">
+                    <p>After the patent has been granted, it has to be renewed every year by paying the renewal fee.</p>
+                    <p>There is no separate form required for patent renewal. A patentee can directly pay the renewal fee by making a request to the controller of patent.</p>
+                </div>
+            </li>
+       </ul> 
     </div>
-    <div class="proc-container">
-      <div class="proc-item">
-        <a href="https://ipindiaonline.gov.in/epatentfiling/goForLogin/doLogin">
-            <div class="row section container" >
-                <h4>Register as New User</h4>
-                <img class="responsive-img" src="images/register.PNG">
-            </div>
 
-        </a>
-        <div class="row section container">
-            <p class="">For Type of Applicant select "Natural Person". You will be required to add <a href='#ds'>Digital Signature</a> before proceeding</p>
-            <img class="responsive-img" src="images/natural-person+digital-signature.PNG">
-            <p>If Digital Signature has been installed properly then the following the screen should pop up. Please select the appropriate certificate.</p>
-            <img class="responsive-img" src="images/digital-certificate.PNG">
-        </div>
-      </div>
-
-
-      <div class="row section container">
-          <h4>Filling Forms</h4>
-          <p>On successful registrations and login you will be redirected to the following page</p>
-          <img class="responsive-img" src="images/portal-homepage.PNG">
-          <p>Following forms are required: (Click on the forms to know more)</p>
-          <ul class="collapsible">
-              <li>
-              <div class="collapsible-header">Form 1<i class="material-icons">arrow_drop_down</i></div>
-              <div class="collapsible-body"><span>Application for Grant of Patent</span></div>
-              </li>
-              <li>
-                  <div class="collapsible-header">Form 2<i class="material-icons">arrow_drop_down</i></div>
-                  <div class="collapsible-body"><span>Complete/Provisional Specification </span></div>
-              </li>
-              <li>
-                  <div class="collapsible-header">Form 3<i class="material-icons">arrow_drop_down</i></div>
-                  <div class="collapsible-body"><span>Statement and Undertaking</span></div>
-              </li>
-              <li>
-                  <div class="collapsible-header">Form 5<i class="material-icons">arrow_drop_down</i></div>
-                  <div class="collapsible-body"><span>Declaration of Inventorship</span></div>
-              </li>
-              <li>
-                  <div class="collapsible-header">Form 18<i class="material-icons">arrow_drop_down</i></div>
-                  <div class="collapsible-body"><span>Request for Examination</span></div>
-              </li>
-          </ul>
-          <p> After  Completion  of  the  form  user  has  to  save  the  draft.  Saving  the  draft  would create a new entry in the drafted forms that can be accessed later on.</p>
-          <p>Upload:After  the  draft  is  saved,  user  is  required  to  upload  the  relevant  documents  by selecting from the drop down list.Once  the  document  is  successfully  uploaded,  uploaded  documents  would  appear  in  the tabular form.</p>
-
-          <img class="responsive-img" src="images/save-form.png">
-          <p>Note that each form must be digitally signed, while uploading</p>
-          <img class="responsive-img" src="images/sign-fike.PNG">
-
-      </div>
-
-      <div class="row section container">
-          <h4>Payment</h4>
-          <p>After the forms are digitally signed, it is ready for making the payment  though  the  available  Payment  Gateways.User  just  needs  to check  the ready  forms  that  require  payment,  select  the  payment  mode  and  bank  and proceed.</p>
-          <p>On successful payment the following screen will be visible:</p>
-          <img src="images/paid.PNG" class="responsive-img">
-      </div>
-
-      <div class="row section container">
-          <h4>Publication</h4>
-          <p>If application has <b>Provisional Specification</b>: Need to file Complete Specification within 12 months. If not, application will be abandoned</p>
-          <p>If application has <b>Complete Specification</b>: Early or post 18 months to publish</p>
-      </div>
-
-      <div class="row section container">
-          <h4>Request for Examination on Form 18</h4>
-          <p>Should be done within 48 months from date of priority</p>
-          <p>Examination of patent is done and <b>FER (First Examination Report)</b> is issued</p>
-      </div>
-
-      <div class="row section container">
-          <h4>FER Issued</h4>
-          <p>Re-examination of amended documents</p>
-          <p>Controller will offer hearing to Applicant</p>
-          <p>Application should be put in order 12 months from issue of FER</p>
-          <p>If objections met within 12 months - <b>patent is granted and published</b>, if not - patent will be abandoned</p>
-      </div>
-    </div>
-
-
-
+    
 
     </body>
 </html>
