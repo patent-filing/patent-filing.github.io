@@ -1,6 +1,7 @@
 html{
-    font-family:Garamond, Georgia, serif;
-  }
+    font-family:sans-serif, serif;
+    background-image: linear-gradient(-90deg, #99ceff, white);
+}
 
 
   .card{
