@@ -11,6 +11,10 @@
   background-color: inherit;
 }
 .lifecycle-img {
-  height: auto;
+  height: 500px;
   width: auto;
+}
+img{
+    display: block;
+    margin: auto
 }
