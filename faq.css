@@ -1,0 +1,12 @@
+.collapsible-header{
+  font-weight: bold;
+}
+
+.table-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.collapsible-body{
+  background-color: inherit;
+}
