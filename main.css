@@ -1,13 +1,13 @@
 html{
     font-family:Garamond, Georgia, serif;
   }
-  
-  
+
+
   .card{
     text-align: center;
   }
-  
-  
+
+
   .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -23,22 +23,22 @@ html{
   width: 90%;
   }
   }
-  
+
      .card-title {
-    
+
       color:#1e88e5
     }
-  
+
     .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
       color:#1e88e5;
-      
+
     }
-  
-    
+
+
     .sidenav-trigger{
       overflow: hidden;
       margin-top: 122px;
-     
+
   }
    .sidenav{
     overflow: auto;
@@ -47,14 +47,14 @@ html{
     background:#bbdefb
   }
 
-  
-  
+
+
   .card .card-title{
     font-weight: 400;
   }
-  
-    
-  
+
+
+
     .sidenav-overlay{
       background-color: rgba(0,0,0,0);
     }
@@ -62,3 +62,8 @@ html{
     h4{
         color:#1565c0;
     }
+
+p {
+      font-family: sans-serif;
+      font-size: 14px;
+  }
