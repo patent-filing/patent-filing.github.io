@@ -12,6 +12,9 @@ html{
     max-height: 300px;
   }
 
+  #second_nav{
+    overflow: hidden;
+  }
 
   .container {
   margin: 0 auto;
