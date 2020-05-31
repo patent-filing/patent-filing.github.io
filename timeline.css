@@ -1,7 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(230,230,230);
+  /* background: rgb(230,230,230);
+   */
+   background-image: linear-gradient(-90deg, #99ceff, white);
 
   color: rgb(50,50,50);
   font-family: 'Open Sans', sans-serif;
