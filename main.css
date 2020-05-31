@@ -1,0 +1,64 @@
+html{
+    font-family:Garamond, Georgia, serif;
+  }
+  
+  
+  .card{
+    text-align: center;
+  }
+  
+  
+  .container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  }
+  @media only screen and (min-width: 601px) {
+  .container {
+  width: 85%;
+  }
+  }
+  @media only screen and (min-width: 993px) {
+  .container {
+  width: 90%;
+  }
+  }
+  
+     .card-title {
+    
+      color:#1e88e5
+    }
+  
+    .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+      color:#1e88e5;
+      
+    }
+  
+    
+    .sidenav-trigger{
+      overflow: hidden;
+      margin-top: 122px;
+     
+  }
+   .sidenav{
+    overflow: auto;
+    height: 25px;
+    top: -55px;
+    background:#bbdefb
+  }
+
+  
+  
+  .card .card-title{
+    font-weight: 400;
+  }
+  
+    
+  
+    .sidenav-overlay{
+      background-color: rgba(0,0,0,0);
+    }
+
+    h4{
+        color:#1565c0;
+    }

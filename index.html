@@ -8,8 +8,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Patent Support Structure</title>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+
+
     <style>
 
     </style>
@@ -19,91 +21,37 @@
   <body>
 
 
-    <!-- First Nav -->
-    
-  
-  <!--Second Nav-->
+    <nav class="#1565c0 blue darken-3 second_nav" style="color:#1e88e5; text-align: center;" >
+    <div class="nav-wrapper" style="color:#1e88e5" >
+        <a href="#" class="brand-logo hide-on-med-and-up">Menu</a>
+        <a href="#" data-target="second_nav" class="sidenav-trigger  btn  center-align #e3f2fd blue lighten-5" style="color:black"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="hide-on-med-and-down temp " style="margin-left:10%">
 
-
-
-<nav class="#1565c0 blue darken-3 second_nav" style="color:#1e88e5" >
-  <div class="nav-wrapper" style="color:#1e88e5" >
-    <a href="#" class="brand-logo right hide-on-med-and-up">Menu</a>
-    <a href="#" data-target="second_nav" class="sidenav-trigger  btn  center-align #e3f2fd blue lighten-5" style="color:black"><i class="material-icons">menu</i></a>
-    <ul id="nav-mobile" class="hide-on-med-and-down temp " style="margin-left:10%">
-
-      <li style="width:33%"><a href="index.html">Home</a></li>
-      <li style="width:33%"><a href="timeline.html">Timeline</a></li>
-      <li style="width:33%"><a href="procedure.html">Procedure </a></li> 
-      
-    </ul>
-  </div>
-</nav>
-
-
-
-
-<!--Mobile side nav-->
-<ul class="sidenav #bbdefb blue lighten-4" id="second_nav" style="margin-left:0;margin-top: 60px; height:40%; width:70%">
-    <li style=""><a href="index.html">Home</a></li>
-    <li style=""><a href="timeline.html">Timeline</a></li>
-    <li style=""><a href="procedure.html">Procedure </a></li> 
-  
-</ul>
-
-<div class="fixed-action-btn" >
-  <a class="btn-floating btn-large red" id="myBtn" style="display: none;" onclick="topFunction()">
-    <i class="large material-icons">keyboard_arrow_up</i>
-  </a>
-</div>
-
-
-
-</div>
-
-
-
-
-
-    <script type="text/javascript" language="javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.getElementById('slider');
-        var instances = M.Slider.init(elems, {duration:1000, interval:2500, indicators:false});
-
-        var elems = document.querySelectorAll('select');
-        var options = document.querySelectorAll('option');
-        var instances = M.FormSelect.init(elems, options);
-
-
-
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems);
-
-
-        var elems = document.querySelectorAll('.collapsible');
-        var instances = M.Collapsible.init(elems);
-
-        var mybutton = document.getElementById("myBtn");
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        console.log(document.body.scrollTop, document.documentElement.scrollTop)
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        console.log()
-        }
-
+        <li style="width:33%"><a href="index.html">Home</a></li>
+        <li style="width:33%"><a href="timeline.html">Timeline</a></li>
+        <li style="width:33%"><a href="procedure.html">Procedure </a></li> 
         
-    });
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-            }
+        </ul>
+    </div>
+    </nav>
 
-    </script>
+
+
+
+    <!--Mobile side nav-->
+    <ul class="sidenav #bbdefb blue lighten-4" id="second_nav" style="margin-left:0;margin-top: 60px; height:40%; width:70%">
+        <li style=""><a href="index.html">Home</a></li>
+        <li style=""><a href="timeline.html">Timeline</a></li>
+        <li style=""><a href="procedure.html">Procedure </a></li> 
+    
+    </ul>
+
+    <div class="fixed-action-btn" >
+    <a class="btn-floating btn red" id="myBtn" style="display: none;" onclick="topFunction()">
+        <i class="large material-icons">keyboard_arrow_up</i>
+    </a>
+    </div>
+
 
 
     </body>
